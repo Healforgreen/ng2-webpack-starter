@@ -1,4 +1,5 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var webpack = require('webpack');
 module.exports = {
     context: __dirname,
     entry: {
@@ -6,6 +7,7 @@ module.exports = {
             'rxjs',
             'zone.js',
             'reflect-metadata',
+            'angular2/platform/browser',
             'angular2/common',
             'angular2/core',
             'angular2/router',
@@ -31,7 +33,10 @@ module.exports = {
     resolve: {
         extensions: ['','.ts','.js','.json']
     },
-    plugins: [new HtmlWebpackPlugin({ template: 'src/index.html', chunksSortMode: 'none' })],
+    plugins: [
+      new HtmlWebpackPlugin({ template: 'src/index.html', chunksSortMode: 'none' }),
+      new webpack.optimize.CommonsChunkPlugin('angular2', 'angular2.bundle.js', Infinity)
+    ],
     devServer: {
         port: 3000,
         host: "localhost",
