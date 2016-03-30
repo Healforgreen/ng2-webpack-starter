@@ -1,6 +1,6 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/home/dc-user/.nvm/versions/node/v5.0.0/bin/node',
-1 verbose cli   '/home/dc-user/.nvm/versions/node/v5.0.0/bin/npm',
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
 1 verbose cli   'run',
 1 verbose cli   'lint' ]
 2 info using npm@3.3.6
@@ -10,35 +10,35 @@
 6 silly lifecycle ng2-webpack-starter@0.0.1~prelint: no script for prelint, continuing
 7 info lifecycle ng2-webpack-starter@0.0.1~lint: ng2-webpack-starter@0.0.1
 8 verbose lifecycle ng2-webpack-starter@0.0.1~lint: unsafe-perm in lifecycle true
-9 verbose lifecycle ng2-webpack-starter@0.0.1~lint: PATH: /home/dc-user/.nvm/versions/node/v5.0.0/lib/node_modules/npm/bin/node-gyp-bin:/home/dc-user/workspace/ng2-webpack-starter/node_modules/.bin:/home/dc-user/.nvm/versions/node/v5.0.0/bin:/bin:/usr/bin:/usr/local/bin
-10 verbose lifecycle ng2-webpack-starter@0.0.1~lint: CWD: /home/dc-user/workspace/ng2-webpack-starter
-11 silly lifecycle ng2-webpack-starter@0.0.1~lint: Args: [ '-c', 'tslint' ]
-12 silly lifecycle ng2-webpack-starter@0.0.1~lint: Returned: code: 1  signal: null
+9 verbose lifecycle ng2-webpack-starter@0.0.1~lint: PATH: C:\Users\brianrt\AppData\Roaming\nvm\v5.0.0\node_modules\npm\bin\node-gyp-bin;D:\workspace\ng2-webpack-starter\node_modules\.bin;C:\Users\brianrt\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\brianrt\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\Skype\Phone;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;%NVM_HOME%;%NVM_SYMLINK%;C:\Users\brianrt\AppData\Roaming\npm;D:\Microsoft VS Code\bin;C:\nvm;C:\Users\brianrt\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+10 verbose lifecycle ng2-webpack-starter@0.0.1~lint: CWD: D:\workspace\ng2-webpack-starter
+11 silly lifecycle ng2-webpack-starter@0.0.1~lint: Args: [ '/d /s /c', 'tslint src/app/**/*.ts' ]
+12 silly lifecycle ng2-webpack-starter@0.0.1~lint: Returned: code: 2  signal: null
 13 info lifecycle ng2-webpack-starter@0.0.1~lint: Failed to exec lint script
-14 verbose stack Error: ng2-webpack-starter@0.0.1 lint: `tslint`
-14 verbose stack Exit status 1
-14 verbose stack     at EventEmitter.<anonymous> (/home/dc-user/.nvm/versions/node/v5.0.0/lib/node_modules/npm/lib/utils/lifecycle.js:233:16)
+14 verbose stack Error: ng2-webpack-starter@0.0.1 lint: `tslint src/app/**/*.ts`
+14 verbose stack Exit status 2
+14 verbose stack     at EventEmitter.<anonymous> (C:\Users\brianrt\AppData\Roaming\nvm\v5.0.0\node_modules\npm\lib\utils\lifecycle.js:233:16)
 14 verbose stack     at emitTwo (events.js:87:13)
 14 verbose stack     at EventEmitter.emit (events.js:172:7)
-14 verbose stack     at ChildProcess.<anonymous> (/home/dc-user/.nvm/versions/node/v5.0.0/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+14 verbose stack     at ChildProcess.<anonymous> (C:\Users\brianrt\AppData\Roaming\nvm\v5.0.0\node_modules\npm\lib\utils\spawn.js:24:14)
 14 verbose stack     at emitTwo (events.js:87:13)
 14 verbose stack     at ChildProcess.emit (events.js:172:7)
 14 verbose stack     at maybeClose (internal/child_process.js:818:16)
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
 15 verbose pkgid ng2-webpack-starter@0.0.1
-16 verbose cwd /home/dc-user/workspace/ng2-webpack-starter
-17 error Linux 3.13.0-37-generic
-18 error argv "/home/dc-user/.nvm/versions/node/v5.0.0/bin/node" "/home/dc-user/.nvm/versions/node/v5.0.0/bin/npm" "run" "lint"
+16 verbose cwd D:\workspace\ng2-webpack-starter
+17 error Windows_NT 10.0.10586
+18 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "lint"
 19 error node v5.0.0
 20 error npm  v3.3.6
 21 error code ELIFECYCLE
-22 error ng2-webpack-starter@0.0.1 lint: `tslint`
-22 error Exit status 1
-23 error Failed at the ng2-webpack-starter@0.0.1 lint script 'tslint'.
+22 error ng2-webpack-starter@0.0.1 lint: `tslint src/app/**/*.ts`
+22 error Exit status 2
+23 error Failed at the ng2-webpack-starter@0.0.1 lint script 'tslint src/app/**/*.ts'.
 23 error This is most likely a problem with the ng2-webpack-starter package,
 23 error not with npm itself.
 23 error Tell the author that this fails on your system:
-23 error     tslint
+23 error     tslint src/app/**/*.ts
 23 error You can get their info via:
 23 error     npm owner ls ng2-webpack-starter
 23 error There is likely additional logging output above.
